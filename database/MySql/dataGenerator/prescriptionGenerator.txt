@@ -1,0 +1,12 @@
+[
+  '{{repeat(450, 1500)}}',
+  {
+    id: '{{index()}}',
+    personID: '{{integer(1, 150)}}',
+    responsibleID: '{{integer(151, 300)}}',
+    authorID: '{{integer(151, 300)}}',
+    description: '{{lorem(1, "paragraphs")}}',
+    creation_date: '{{date(new Date(2016, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
+    completion_date: '{{date(new Date(2016, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "categoryTable": "site",
+    "categoryCode": 0,
+    "categoryName": "proident"
+  },
+  {
+    "id": 1,
+    "categoryTable": "site",
+    "categoryCode": 1,
+    "categoryName": "exercitation"
+  },
+  {
+    "id": 2,
+    "categoryTable": "site",
+    "categoryCode": 2,
+    "categoryName": "voluptate"
+  },
+  {
+    "id": 3,
+    "categoryTable": "prescription",
+    "categoryCode": 3,
+    "categoryName": "duis"
+  },
+  {
+    "id": 4,
+    "categoryTable": "prescription",
+    "categoryCode": 4,
+    "categoryName": "cupidatat"
+  },
+  {
+    "id": 5,
+    "categoryTable": "site",
+    "categoryCode": 5,
+    "categoryName": "ad"
+  },
+  {
+    "id": 6,
+    "categoryTable": "prescription",
+    "categoryCode": 6,
+    "categoryName": "sint"
+  },
+  {
+    "id": 7,
+    "categoryTable": "site",
+    "categoryCode": 7,
+    "categoryName": "velit"
+  },
+  {
+    "id": 8,
+    "categoryTable": "prescription",
+    "categoryCode": 8,
+    "categoryName": "aute"
+  },
+  {
+    "id": 9,
+    "categoryTable": "prescription",
+    "categoryCode": 9,
+    "categoryName": "voluptate"
+  }
+]

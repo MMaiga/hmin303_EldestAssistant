@@ -1,0 +1,9 @@
+[
+  '{{repeat(150, 1500)}}',
+  {
+    id: '{{index()}}',
+    personID: '{{integer(150, 300)}}',
+    category: '{{integer(0, 9)}}',
+    link : 'www.ouwasav.com'
+  }
+]

@@ -1,0 +1,23 @@
+mysql> desc eldest_responsible ;
++---------------+----------+------+-----+-------------------+-----------------------------+
+| Field         | Type     | Null | Key | Default           | Extra                       |
++---------------+----------+------+-----+-------------------+-----------------------------+
+| id            | int(11)  | NO   | PRI | NULL              | auto_increment              |
+| idEldest      | int(11)  | YES  | MUL | NULL              |                             |
+| idResponsible | int(11)  | YES  | MUL | NULL              |                             |
+| date          | datetime | YES  |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
+| state         | int(11)  | YES  |     | 0                 |                             |
+| senderRole    | int(11)  | YES  |     | NULL              |                             |
++---------------+----------+------+-----+-------------------+-----------------------------+
+6 rows in set (0,00 sec)
+
+[
+  '{{repeat(250, 500)}}',
+  {
+    id: '{{index()}}',
+    idEldest: '{{integer(1, 149)}}',
+    idResponsible: '{{integer(150, 250)}}',
+    state: '{{integer(0, 1)}}',
+    senderRole: '{{integer(0, 1)}}'
+  }
+]

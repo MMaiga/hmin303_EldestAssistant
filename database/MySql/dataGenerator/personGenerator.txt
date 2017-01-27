@@ -1,0 +1,35 @@
+[
+  '{{repeat(200, 250)}}',
+  {
+    firstName: '{{firstName()}}',
+    lastName: '{{surname()}}',
+    username: '{{firstName()}} {{surname()}}',
+    birthdate: '{{date(new Date(integer(1900, 1993), 0, 1), new Date(), "YYYY-MM-dd")}}',
+  address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+  password : "password",
+  mail : '{{firstName()}}.{{surname()}}@exemple.com',
+  role : '0',
+  photo : "user_photo.png",
+  phone : "0 "+'{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}',
+  id: '{{index()}}'
+  }
+]
+
+
+[
+  '{{repeat(200, 250)}}',
+  {
+
+    firstName: '{{firstName()}}',
+    lastName: '{{surname()}}',
+    username: '{{firstName()}} {{surname()}}',
+    birthdate: '{{date(new Date(integer(1900, 1993), 0, 1), new Date(), "YYYY-MM-dd")}}',
+  address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+  password : "password",
+  mail : '{{firstName()}}.{{surname()}}@exemple.com',
+  role : '1',
+  photo : "user_photo.png",
+  phone : "0 "+'{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}{{integer(1,9)}}',
+id: '{{index()+250}}'
+  }
+]

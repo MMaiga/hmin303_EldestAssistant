@@ -1,0 +1,9 @@
+[
+  '{{repeat(10, 15)}}',
+  {
+    id: '{{index()}}',
+    categoryTable: '{{random("site", "prescription")}}',
+    categoryCode : '{{integer(4, 6)}}',
+    categoryName : '{{lorem(1, "words")}}'
+  }
+]
