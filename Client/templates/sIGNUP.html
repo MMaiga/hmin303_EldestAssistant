@@ -1,0 +1,41 @@
+<ion-view title="SIGN UP" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div id="sIGNUP-button-bar2" class="button-bar"></div>
+    <form id="sIGNUP-form2" class="list">
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider4" delegate-handle="slider4" id="accueil-slider4" style="width:100%;height:200px;">
+      <ion-slide-page id="accueil-slide27" style="background:url(&quot;img/1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="accueil-slide28" style="background:url(&quot;img/3.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="width: 300px; height: 12px;"></div>
+      <label class="item item-input" id="sIGNUP-input7">
+        <input type="text" placeholder="Firstname" value="" ng-model="user.firstname" >
+      </label>
+      <label class="item item-input" id="sIGNUP-input8">
+        <input type="text" placeholder="Lastname" value="" ng-model="user.lastname">
+      </label>
+      <label class="item item-input" id="sIGNUP-input9">
+        <input type="tel" placeholder="phone" value="" ng-model="user.phone">
+      </label>
+      <label class="item item-input" id="sIGNUP-input6">
+        <input type="password" placeholder="Password" value="" ng-model="user.password" required>
+      </label>
+      <label class="item item-input" id="sIGNUP-input6">
+        <input type="password" placeholder="Confirm password" value="" ng-model="user.ConfirmPass">
+      </label>
+      <div class="list"> 
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Role
+          </div>
+          <select ng-model="user.role">
+            <option value=1 selected>Eldest</option>
+            <option value=0>Responsible</option>
+          </select>
+        </label>
+      </div>
+    </form>
+    <button class="button button-positive  button-block" ng-click="signup()">
+      Create
+    </button>
+  </ion-content>
+</ion-view>

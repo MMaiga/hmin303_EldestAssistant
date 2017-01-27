@@ -1,0 +1,32 @@
+<ion-view id="pageNewSite">
+<ion-header-bar align-title="center" class="bar-positive">
+  <h1 class="title">New Site</h1>
+  
+</ion-header-bar>
+        <ion-content padding="true" >  
+        <ion-list id="sites-list10">
+        	 
+	      <ion-item class="item item-input" >
+
+	      	<ion-label>Link</ion-label>
+	      	<input type="text" placeholder="link" value="" ng-model="site.link" required>
+	      </ion-item>
+	      <center>
+	      <ion-item>
+	        <ion-label>Categorie</ion-label>
+	      <select ng-model="site.category">
+	        <option value="{{category.categoryCode}}" ng-repeat="category in categories">{{category.categoryName}}</option>
+	      </select>
+	    </ion-item>
+	    </center>
+	    </ion-list>
+         
+	    <button class="button button-full button-balanced" ng-click="Create(personID)">
+	      Create
+	    </button>   
+        </ion-content>
+<ion-footer-bar align-title="right" class="bar-positive">
+  
+</ion-footer-bar>
+</ion-view>
+

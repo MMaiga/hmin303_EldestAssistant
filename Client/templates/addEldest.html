@@ -1,0 +1,122 @@
+<ion-view id="pageAddEldest">
+  <ion-header-bar align-title="center" class="bar-positive">
+
+    <h1 class="title">Responsible {{memberinfo.id}} EldestManagement</h1>
+
+  </ion-header-bar>
+
+
+  <ion-content padding="true">
+
+    <ion-item>
+      <ion-label color="primary">Eldest phone number</ion-label>
+      <label class="item item-input">
+        <input type="text" placeholder="phone" value="" ng-model="eldestSearched.phone" required>
+      </label>
+    </div>
+    <button class="button button-full button-balanced" ng-click="searchEldest()">
+      Search
+    </button>
+  </ion-item>
+
+  <ion-list ng-if="eldestFounded">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/avatar-finn.png">
+      </ion-avatar>
+      <header>
+              <ion-grid>
+                <ion-row>
+                  <ion-col width-25>{{eldestFounded.id}}</ion-col>
+                  <ion-col width-25>{{eldestFounded.firstname}}</ion-col>
+                  <ion-col width-25>{{eldestFounded.lastname}}</ion-col>
+                  <ion-col width-25>{{eldestFounded.username}}</ion-col>
+                </ion-row>
+              </ion-grid>
+      </header>
+      <body>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col width-40>
+
+                  birthdate: {{eldestFounded.birthdate}}
+
+                  mail: {{eldestFounded.mail}}
+
+                  phone: {{eldestFounded.phone}}
+                </ion-col>
+            <ion-col width-60>
+            address: {{eldestFounded.address}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </body>
+
+
+      <footer>
+        role: {{eldestFounded.role}}
+      </footer>
+      <button ion-button clear item-right ng-click="addEldest()">AddEldest</button>
+    </ion-item>
+
+
+
+    <ion-list id="prescription-list7">
+
+          <ion-item  ng-repeat="eledest in eldestInCharge">
+            <ion-item>
+              <ion-avatar item-left>
+                <img src="img/avatar-finn.png">
+              </ion-avatar>
+              <header>
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col width-25>{{eledest.id}}</ion-col>
+                          <ion-col width-25>{{eledest.firstname}}</ion-col>
+                          <ion-col width-25>{{eledest.lastname}}</ion-col>
+                          <ion-col width-25>{{eledest.username}}</ion-col>
+                        </ion-row>
+                      </ion-grid>
+              </header>
+              <body>
+
+                <ion-grid>
+                  <ion-row>
+                    <ion-col width-40>
+
+                          birthdate: {{eledest.birthdate}}
+
+                          mail: {{eledest.mail}}
+
+                          phone: {{eledest.phone}}
+                        </ion-col>
+                    <ion-col width-60>
+                    address: {{eledest.address}}
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </body>
+
+
+              <footer>
+                role: {{eldestFounded.role}}
+              </footer>
+            </ion-item>
+    </ion-item>
+    </ion-list>
+
+  </ion-list>
+
+
+
+
+
+
+</ion-content>
+
+
+<ion-footer-bar align-title="right" class="bar-positive">
+  <button class="button  button-clear" ng-click="responsibleGetEldest()">refresh</button>
+</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view id="page1">
+  <ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon icon ion-ios-compose"
+          ui-sref='allViewResponsiblePrescription'>List</button>
+    <h1 class="title">New prescription</h1>
+
+  </ion-header-bar>
+  <ion-content padding="true">
+    <ion-item>
+
+
+      <label class="item item-input filter-date-label" id="create-input1" style="padding-right: 25px;">
+        <span class="input-label filter-date-span">Date</span>
+        <input class="filter-date" type="date"  ng-model="prescription.completion_date">
+      </label>
+
+
+<label class="item item-input item-select">Please select Eldests
+    <div class="input-label">
+        &nbsp;
+    </div>
+    <select ng-model="prescription.personID">
+        <option ng-repeat="eldest in eldestInCharge" ng-value="{{eldest.id}}">{{eldest.firstname }}</option>
+    </select>
+</label>
+
+<label class="item item-input" id="create-textarea1">
+  <span class="input-label"></span><textarea placeholder="description..." ng-model="prescription.description"></textarea>
+</label>
+
+
+
+    <button id="create-button1" class="button button-positive  button-block" ng-click="save(personID)">Save</button>
+    </ion-item>
+  </ion-content>
+</ion-view>

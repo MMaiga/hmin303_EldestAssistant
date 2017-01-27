@@ -1,0 +1,36 @@
+<ion-view title="Sites" style="background-color:#EAF0E8;">
+  <ion-header-bar align-title="center" class="bar-calm">
+    <button class="button button-icon icon ion-ios-minus-outline"
+          ng-click="data.showDelete = !data.showDelete"></button>
+    <h1 class="title">Sites</h1>
+    <a ui-sref="newSite" class="button button-calm icon ion-ios-world">New</a>
+  </ion-header-bar>
+  <ion-content padding="true" >
+    <center>
+      <ion-item>
+          <ion-label>Categorie</ion-label>
+        <select ng-model="category.categoryCode" ng-change="GetList(category.categoryCode,personID)">
+          <option value="{{category.categoryCode}}" ng-repeat="category in categories">{{category.categoryName}}</option>
+        </select>
+      </ion-item>
+    </center>
+
+    <!--<ion-list id="sites-list10">
+      <ion-item class="item-icon-right positive" ng-repeat="site in sites" ui-sref="siteView">{{site.link}}
+        <i class="icon ion-ios-world"></i>
+      </ion-item>
+      
+    </ion-list>-->
+    <ion-list show-delete="data.showDelete">
+            <ion-item ng-href="{{site.link}}" ng-repeat="site in sites" ng-click='window.open(this.href, "_system", "location=yes"); return false;'>
+                {{site.link}}
+                <ion-delete-button class="ion-minus-circled" 
+                             ng-click="onItemDelete(site,{{site.id}})">
+                </ion-delete-button>
+            </ion-item>
+    </ion-list
+  </ion-content>
+</ion-view>
+
+<!--http://www.tv5monde.com/cms/chaine-francophone/jeunesse/Entrainement-cerebral/p-26340-Mots-coupes.htm
+  -->

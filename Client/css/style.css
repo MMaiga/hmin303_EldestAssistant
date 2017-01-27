@@ -1,0 +1,634 @@
+/* Empty. Add your own CSS if you like */
+
+
+/* Empty. Add your own CSS if you like */
+.top-tab-bar{
+    margin-top:150px !important;
+}
+
+.list-div{
+
+    margin-bottom: 68px !important;
+    margin-top:92px !important;
+}
+
+.no-data-found{
+    position:absolute;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    margin-top:200px !important;
+    color: #7A7C7E;
+    font-size: 15px;
+}
+
+.item-box{
+    width: 55px;
+    height: 55px;
+    display: inline;
+    border-radius: 0% !important;
+    /*position: absolute;*/
+}
+
+.item-location-marker{
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 0% !important;
+}
+
+.details-view{
+    display: inline-block;
+    margin-left: 15px !important;
+    width: 75% !important;
+    /*position: absolute;*/
+}
+
+.brand-view-logo{
+    display: inline-block;
+    margin-left: 2px !important;
+    width: 45% !important;
+    /*position: absolute;*/
+}
+.brand-view-logo img{
+    margin-left: -50px !important;
+}
+.location-view{
+    display: inline-block;
+    margin-left: -55px !important;
+    margin-right: 20px !important;
+}
+
+.user-title{
+    width: 65% !important;
+}
+
+.modal.active {
+    background-color: black;
+}
+
+.color-title{
+background-color:#CAB0B0;
+background:#CAB0B0;
+}
+
+.profile-avatar{
+    border-radius: 50% !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-left: 72% !important;
+    z-index:99 !important;
+}
+.logo-avatar{
+    border-radius: 50% !important;
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 33% !important;
+    z-index:99 !important;
+}
+
+.close-moddel{
+    border-radius: 50% !important;
+    width: 30px !important;
+    height: 30px !important;
+    /*margin-left: 72% !important;*/
+    z-index:99 !important;
+}
+
+.fb-popup{
+    position: absolute;
+}
+
+.profile-title{
+    margin-left: 25% !important;
+}
+
+#profile-image {
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    width: 100%;
+}
+
+.profile-info-image{
+    display: inline-block;
+}
+
+.profile-info{
+    display: inline-block;
+
+
+}
+
+.info-text{
+    color: #fff;
+    margin-top: 35px;
+    font-size: 25px;
+    margin-left: -20px;
+}
+
+.info-text-sub{
+    color: #fff;
+    margin-top: 3px;
+    font-size: 12px;
+    margin-left: -20px;
+}
+
+.logout-btn{
+    color: #000;
+
+    font-size: 17px;
+    margin-left: -20px;
+    width: 250px;
+    text-align: center;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.logoout-btn-holder{
+    margin-top: 20px;
+
+}
+
+.tag-panel{
+    /*background-color: #C5B0B0;*/
+    /*height: 100vh;*/
+}
+
+.profile-panel{
+    background-color: #2b3739;
+}
+.facebook-login {
+    margin: 0 auto;
+}
+.facebook-login a{
+    white-space: nowrap;
+    background-color: #366299;
+    border: none;
+    color: #ffffff;
+    line-height: 47px;
+}
+
+.fb-pop-list{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #222c2e;
+}
+
+.bottom-panel{
+    height: 50px;
+}
+
+.store-title{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 22px;
+    margin-left: 20px;
+}
+.profile-tag{
+    background-color: #5CBD62;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.profile-tag.add{
+    background-color: #CCCCCC;
+    color: #000000;
+}
+/* Maps */
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll {
+    height: 100%;
+}
+
+
+
+.location-view p{
+    color: #fff;
+}
+
+.brand-title{
+    color: #fff;
+}
+/* Chanuka */
+.inspiration-content{
+    margin-top: 44px;
+}
+
+.deal-card {
+    background: #B38E8E;
+    width: 90vw;
+    height:50vh;
+    margin: 5vw;
+    margin-bottom: 0;
+}
+
+.deal-img-card {
+    background: #fff;
+    height: 55vh;
+    padding: 3vw;
+    border-radius: 6px;
+}
+
+.wishlistcard{
+    height: 95vh !important;
+}
+
+.wishlistcard-item{
+    height: 60vh !important;
+}
+
+.deal-img-card .title-bar {
+    padding-top: 0;
+    padding-bottom: 2vw;
+}
+.deal-img-card .title-bar>.col{
+    padding-top: 0;
+
+    padding-bottom: 0;
+}
+.deal-card .title-bar{
+  font-size: 24px;
+}
+.deal-img-card .title-bar .col-10>i {
+    font-size: 24px;
+}
+.deal-img-card .title-bar .col-10>a{
+    font-size: 20px;
+}
+.deal-img-card .title-bar .col-80 {
+    font-size: 15px;
+
+
+    font-weight: 500;
+}
+.deal-img-card .item-image {
+    height: 40vh !important;
+    overflow-y: hidden;
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+.modal .deal-img-card .item-image{
+    height: 32vh !important;
+}
+.deal-img-card .item-image>img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.deal-img-card .item-image .brand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.deal-img-card .item-image .brand img {
+
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+.deal-img-card button.claim-deal {
+    position: absolute;
+    bottom: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 82vw;
+    border: none;
+}
+.deal-info-bar{
+    background-color: #333333;
+    color: #FFFFFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0;
+}
+.deal-info-bar .location {
+    font-size: 15px;
+    font-weight: 500;
+}
+.deal-info-bar .location span.icon{
+    font-size: 30px;
+}
+.deal-info-bar .location span.text{
+    vertical-align: super;
+}
+.deal-info-bar .deal-ends {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.deal-info-bar .price {
+    font-size: 15px;
+    font-weight: 500;
+}
+.deal-details-box {
+    padding: 5px;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 20px;
+}
+
+.deal-details-box .img {
+    border-radius: 6px;
+    width: 40vw !important;
+    height: 18vw !important;
+    float: right;
+    margin-left: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+.deal-details-box .img img {
+    width: 100%;
+    margin-top: -25%;
+}
+.deal-details-box .img button{
+    color: #5CBD62;
+    width: 16vw;
+    position: absolute;
+    right: 0;
+}
+.deal-toolbar {
+    margin: 0 !important;
+    position: relative;
+
+}
+.deal-close,
+.deal-wish{
+    background-color: #EEEEEE;
+    line-height: 20vw;
+}
+.deal-close,
+.deal-wish {
+    width: 16vh;
+    height: 16vh;
+    border-radius: 100%;
+    border: 5px solid #DDDDDD;
+    line-height: 9vh;
+}
+.deal-close button,
+.deal-wish button{
+    color:#555555;
+    line-height: 6vh;
+    height: 14vh;
+    border: 0;
+}
+.deal-wish button {
+    color: #5CBD62;
+}
+.deal-close {
+    float: right;
+    margin-right: 5%;
+}
+.deal-wish {
+    float: left;
+    margin-left: 5%;
+}
+.deal-info-wrap{
+    height: 8vh;
+    width: 50%;
+    padding: 0;
+}
+.deal-info{
+    background-color: #EEEEEE;
+    border: 5px solid #DDDDDD;
+    width: 50%;
+    height: 8vh;
+    position: absolute;
+    bottom: 5.0vh;
+    left: 50%;
+    margin: 0 !important;
+    margin-left: -25%  !important;
+    padding: 0;
+    line-height: 6vh;
+    z-index: -1;
+}
+.deal-info button{
+    color: #555555;
+    height: 2vh;
+    border: 0;
+    line-height: 2vh;
+}
+
+.tool-bar-offset{
+    padding: 0 !important;
+}
+.tab-item{
+    -webkit-background-size: contain !important;
+    -moz-background-size: cover !important;
+    -o-background-size: contain !important;
+    background-size: contain !important;
+}
+.wishlist-tabs {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    padding-top: 5px !important;
+    background-color: #5CBD62 !important;
+}
+.wishlist-tabs a.deallist,
+.wishlist-tabs a.deallist.active,
+.wishlist-tabs a.deallist.activeed,
+.wishlist-tabs a.brandlist,
+.wishlist-tabs a.brandlist.active,
+.wishlist-tabs a.brandlist.activeed{
+    padding: 0;
+    margin: 0;
+    border: none !important;
+}
+.wishlist-tabs a.deallist,
+.deallist-list,
+.deallist-list .item-content{
+    background-color: #EEEEEE;
+    color: #555555
+}
+.wishlist-tabs a.brandlist,
+.brandlist-list,
+.brandlist-list .item-content{
+    background-color: #555555;
+    color: #EEEEEE;
+}
+.wishlist-tabs .deallist span ,
+.wishlist-tabs .brandlist span {
+    display: inline-block;
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+}
+.wishlist-tabs .deallist span {
+    background-color: #EEEEEE;
+    left: 0;
+    border-top-right-radius: 6px;
+}
+.wishlist-tabs .brandlist span {
+    background-color: #555555;
+    right: 0;
+    border-top-left-radius: 6px;
+}
+.bar.bar-header.bar-balanced{
+    border: none;
+}
+.search-bar {
+    margin-bottom: 10px;
+}
+.filter-bar {
+    position: absolute;
+    height: auto;
+    top: 44px;
+    transition: 0.4s;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+/*Rajitha */
+.search-bar1 {
+    margin-top: 50px;
+}
+.filter-bar1 {
+    position: absolute;
+    height: auto;
+    top: 0px;
+    transition: 0.4s;
+    padding-left: 0;
+    padding-right: 0;
+}
+.tab-lable-wrapper {
+    position: absolute;
+    font-size: 125%;
+    top: 10px;
+    width: 50vw;
+    text-align: center;
+    margin-left: 50vw;
+    left: -25vw;
+    height: 62px;
+    line-height: 62px;
+
+}
+.search-scrollable-div1{
+    height: 100px;
+    overflow-y : scroll;
+    overflow-x: hidden;
+}
+/*......................................*/
+
+
+
+
+
+
+.filter-wrapper,
+.filter-wrapper > div{
+    padding-bottom: 0;
+    padding-left: 0;    padding-right: 0;
+}
+.wishlist-lable-wrapper {
+    position: absolute;
+    bottom: 10px;
+    width: 50vw;
+    text-align: center;
+    margin-left: 50vw;
+    left: -25vw;
+    height: 62px;
+    line-height: 62px;
+}
+.wishlist-lable {
+    position: relative;
+}
+.wishlist-lable .top-strip,
+.wishlist-lable .bottom-strip {
+    position: absolute;
+}
+.wishlist-lable .top-strip{
+    bottom: 18px;
+}
+.wishlist-lable .bottom-strip {
+    bottom: -16px;
+}
+
+.loading{
+    top: 40vh;
+    position: relative;
+}
+.image-center{
+    text-align: center;
+}
+.facebook-share{
+    position: absolute;
+    bottom: 95px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 82vw;
+    /*border: none;*/
+}
+.claim-deal {
+
+}
+/* Rajitha */
+.deal-popup-title-box{
+    margin-top: -50px !important;
+}
+.color_title{
+    width:100vw;
+    height: 10vh;
+    color:#E8F66D;
+}
+.modal-opacity{
+    background-color: rgba(37, 36, 36, 0.52) !important;
+}
+.modal-deal-map-view{
+    background-color: #CCC !important;
+}
+.map-deal-selected-box{
+    margin-top: 60px;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.map-deal-scrolable{
+    overflow-x:scroll;
+    height: 55vh;
+}
+.deal-details-parent-box{
+    margin-top: 5%;
+}
+.deal-details-parent-box .deal-img-card .item-image{
+    height: 30vh !important;
+}
+/* Prasad */
+.search-scrollable-div{
+    height: 150px;
+    overflow-y : scroll;
+    overflow-x: hidden;
+}
+.fb-pop-list{
+       overflow-y: hidden;
+     overflow-x: hidden;
+ }
+.tabs-positive > .tabs{
+background-color: #B38E8E !important;
+}
+
+.item .item-content {
+  background-color: transparent !important;
+}
+}

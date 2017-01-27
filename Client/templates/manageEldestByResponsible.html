@@ -1,0 +1,114 @@
+<ion-view id="pageManageEldest">
+  <ion-header-bar align-title="center" class="bar-positive">
+
+    <h1 class="title">Responsible {{memberinfo.id}} EldestManagement</h1>
+    <input type="text" name="search" placeholder="Search.." ng-model="eldestSearched.phone"  ngEnter="searchEldest()">
+    <button class="button button-calm" ng-click="searchEldest()">
+      Search
+    </button>
+  </ion-header-bar>
+
+
+  <ion-content padding="true">
+
+
+
+    <ion-list id="prescription-list7">
+
+      <ion-item ng-if="eldestFounded">
+
+        <div ng-style="ngStyleRelationEldestResponsible(eledest,'layout')">
+
+          <header class="item" ng-style="ngStyleRelationEldestResponsible(eledest,'header')">
+            <div class="row">
+              <div class="col col-70">  <h2>{{eldestFounded.firstname}} {{eldestFounded.lastname}}  <h2></div>
+                <div class="col col-30" style="text-align:center;">  <h2>{{eldestFounded.id}}  <h2></div>
+                </div>
+              </header>
+
+
+              <div ng-style="ngStyleRelationEldestResponsible(eldestFounded,'body')">
+
+                
+                  <ion-list id="prescription-list7">
+                  <div class="row">
+                      <div class="col col-25"><b>phone</b></div>
+                      <div class="col col-75"><p>{{eldestFounded.phone}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eldestFounded.senderRole==1 || eldestFounded.state==1">
+                      <div class="col col-25"><b>mail</b></div>
+                      <div class="col col-75"><p>{{eldestFounded.mail}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eldestFounded.senderRole==1 || eldestFounded.state==1">
+                      <div class="col col-25"><b>birthdate</b> </div>
+                      <div class="col col-75"><p>{{eldestFounded.birthdate | date :  "dd/MM/y"}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eldestFounded.senderRole==1 || eldestFounded.state==1">
+                      <div class="col col-25"><b>address</b></div>
+                      <div class="col col-75"><p>{{eldestFounded.address}}</p></div>
+                    </div>
+                  </ion-list>
+
+              </div>
+
+              <footer ng-style="ngStyleRelationEldestResponsible(eledest,'footer')">
+                <button class="button button-energized " clear item-right ng-click="addEldest()">Ajouter</button>
+              </footer>
+            </div>
+
+
+
+          </ion-item>
+      <div ng-repeat="eledest in eldestInCharge">
+        <ion-item  class=" card item" >
+          <div ng-style="ngStyleRelationEldestResponsible(eledest,'layout')">
+
+            <header class="item" ng-style="ngStyleRelationEldestResponsible(eledest,'header')">
+              <div class="row">
+                <div class="col col-70">  <h2>{{eledest.firstname}} {{eledest.lastname}}  <h2></div>
+                <div class="col col-30" style="text-align:center;">  <h2>{{eledest.id}}  <h2></div>
+              </div>
+            </header>
+
+
+            <div ng-style="ngStyleRelationEldestResponsible(eledest,'body')">
+
+     <div class="row">
+                      <div class="col col-25"><b>phone</b></div>
+                      <div class="col col-75"><p>{{eledest.phone}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eledest.senderRole==1 || eledest.state==1">
+                      <div class="col col-25"><b>mail</b></div>
+                      <div class="col col-75"><p>{{eledest.mail}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eledest.senderRole==1 || eledest.state==1">
+                      <div class="col col-25"><b>birthdate</b> </div>
+                      <div class="col col-75"><p>{{eledest.birthdate | date :  "dd/MM/y"}}</p></div>
+                    </div>
+                    <div class="row" ng-if="eledest.senderRole==1 || eledest.state==1">
+                      <div class="col col-25"><b>address</b></div>
+                      <div class="col col-75"><p>{{eledest.address}}</p></div>
+                    </div>
+            </div>
+
+            <footer ng-style="ngStyleRelationEldestResponsible(eledest,'footer')">
+              <button class="button button-balanced" round ng-if="eledest.senderRole==1 && eledest.state== 0"  ng-click="acceptEldest(eledest,1)">Accepter</button>
+              <button class="button button-stable" round ng-if="eledest.senderRole==1 && eledest.state== 0"  ng-click="showConfirmRemoveEldest(eledest)">Refuser</button>
+              <button class="button button-positive" round ng-if="eledest.state==1" ng-click="viewEldest(eledest)">Afficher</button>
+              <button class="button button-stable" round ng-if="eledest.state==1" ng-click="showConfirmRemoveEldest(eledest)">Supprimer</button>
+              <button class="button button-calm " round ng-if="eledest.senderRole==0 && eledest.state== 0"  ng-click="showConfirmRemoveEldest(eledest)">Annuler</button>
+            </footer>
+          </div>
+        </ion-item>
+      </div>
+    </ion-list>
+
+
+
+
+
+  </ion-content>
+
+
+ 
+</ion-view>

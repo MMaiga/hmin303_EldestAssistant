@@ -1,0 +1,39 @@
+<ion-view id="page6">
+  <ion-header-bar align-title="center" class="bar-calm">
+  <h1 class="title">Update profil</h1>
+</ion-header-bar>
+  <ion-content padding="true">
+    <form id="updateProfil-form3" class="list">
+      <ion-list id="updateProfil-list6">
+        <label class="item item-input" id="updateProfil-input10">
+          <span class="input-label">Firstname</span> 
+          <input type="text" ng-model="user.firstname" placeholder="Firstname">
+        </label>
+        <label class="item item-input" id="updateProfil-input11">
+          <span class="input-label">Lastname</span> 
+          <input type="text" ng-model="user.lastname" placeholder="Lastname">
+        </label>
+        <label class="item item-input" id="updateProfil-input12">
+          <span class="input-label">Password</span>
+          <input type="text" ng-model="user.password" placeholder="Password">
+        </label>
+        <label class="item item-input" id="updateProfil-input14">
+          <span class="input-label">Birthdate</span>
+          <input type="text" ng-model="user.birthdate" placeholder="birthdate">
+        </label>
+        <label class="item item-input" id="updateProfil-input15">
+          <span class="input-label">Address</span> 
+          <input type="text" ng-model="user.address" placeholder="address">
+        </label>
+        <label class="item item-input" id="updateProfil-input13">
+          <span class="input-label">Mail</span> 
+          <input type="text" ng-model="user.mail" placeholder="mail">
+        </label>
+      </ion-list>
+      <button class="button button-full button-calm" ng-click="update()">
+      Update
+    </button>
+      
+    </form>
+  </ion-content>
+</ion-view>

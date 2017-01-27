@@ -1,0 +1,26 @@
+<ion-view title="allViewResponsiblePrescription" id="prescription-allview">
+  <ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon icon ion-ios-compose"
+          ui-sref='create'>Create</button>
+    <h1 class="title">PrescriptionsList</h1>
+  </ion-header-bar>
+  <ion-content padding="true" >
+    <ion-list id="prescription-list7">
+      <div class="row">
+        <div class="col col-33">Prescription</div>
+      </div>
+
+      <ion-item ng-repeat="model in prescriptions">
+        <div class="row" ng-click = getInfoPrescription(model)>
+          <div class="col col-33">{{model.description}}</div>
+        </div>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-positive">
+      <button id="principal-button23" class="button button-clear"></button>
+
+      <button id="principal-button23" class="button button-clear"></button>
+  </ion-footer-bar>
+</ion-view>

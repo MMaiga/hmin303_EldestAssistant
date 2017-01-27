@@ -1,0 +1,21 @@
+<ion-view title="Sms" style="background-color:#EAF0E8;">
+  <ion-content padding="true" >
+ 
+  <div id="sms-button-bar4" class="has-header">
+      
+    </div>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Number</span>
+            <input type="text" ng-model="sms.number">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Message</span>
+            <input type="text" placeholder="Message" ng-model="sms.message">
+          </label>
+          <button class="button button-full button-calm" ng-click="sendSMS()">
+            Send SMS
+          </button>
+        </div>  
+  </ion-content>
+</ion-view>

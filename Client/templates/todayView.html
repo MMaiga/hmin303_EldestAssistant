@@ -1,0 +1,25 @@
+<ion-view title="TodayPrescriptions" id="prescription-allview">
+  <ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon icon ion-ios-compose"
+          ui-sref='allViewEldestPrescription'>List</button>
+    <h1 class="title">TodayPrescriptions</h1>
+  </ion-header-bar>
+  <ion-content padding="true" >
+    <ion-list id="prescription-list7">
+      <div class="row" >
+        <div class="col col-33">Prescription</div>
+      </div>
+
+      <ion-item ng-repeat="model in prescriptions">
+        <div class="row" ng-click = getInfoPrescription(model)>
+        </div>
+        <div class="col col-33">{{model.description}}</div>
+        <button style="color:green" class="button button-icon icon ion-ios-compose" ng-if = "model.validation != 1" ng-click="sendSMS(model.phone); validPrescription(model)">Valid</button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-positive">
+
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view id="page7" >
+<ion-header-bar align-title="center" class="bar-positive">
+    <button id="principal-button23" class="button button-positive" ></button>
+    <h1 class="title">Prescription</h1>
+   <a ui-sref="newPrescription"  ng-click="getPrescription()" class="button button-positive  icon ion-ios-compose"></a>
+  </ion-header-bar>
+  <ion-content padding="true">
+
+    <ion-list id="prescription-list7">
+          <ion-item  ng-repeat="model in prescriptions">
+      personID : {{model.personID}}
+      responsibleID : {{model.responsibleID}}
+      authorID : {{model.authorID}}
+      creation_date : {{model.creation_date}}
+      completion_date : {{model.completion_date}}
+      description : {{model.description}}
+    </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+<!--<div ng-repeat="person in persons" class="col-sm-4">
+      {{person.firstname}}
+</div>-->

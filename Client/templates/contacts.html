@@ -1,0 +1,19 @@
+<ion-view id="pageContact">
+<ion-header-bar align-title="center" class="bar-calm">
+  <button class="button" ng-click="getContactList()">Contacts</button>
+  <h1 class="title">Contact</h1>
+  <button class="button" ng-click="sendSmsToAll()">Send to selection</button>
+  
+</ion-header-bar>
+        <ion-content padding="true" >  
+            <ion-list>
+                <ion-checkbox ng-repeat="contact in contacts" class="item-icon-right positive"  ng-model="isChecked" ng-change="checkedOrNot(contact.phoneNumbers[0].value, isChecked, $index)" ng-init='isChecked=false'>
+                {{contact.displayName}}<i class="icon ion-android-contact"></i>
+                </ion-checkbox>
+            </ion-list>
+        </ion-content>
+<ion-footer-bar align-title="center" class="bar-calm">
+  <button class="button  button-clear" ui-sref="sms">send sms</button>
+</ion-footer-bar>
+</ion-view>
+

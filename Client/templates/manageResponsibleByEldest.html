@@ -1,0 +1,115 @@
+<ion-view id="pageManageResponsible">
+  <ion-header-bar align-title="center" class="bar-positive">
+
+    <h1 class="title">Eldest {{memberinfo.id}} ResponsibleManagement</h1>
+    <input type="text" name="search" placeholder="Search.." ng-model="responsibleSearched.phone"  ngEnter="searchResponsible()">
+    <button class="button button-calm" ng-click="searchResponsible()">
+      Search
+    </button>
+
+  </ion-header-bar>
+
+
+  <ion-content padding="true">
+
+
+
+
+
+  <ion-list id="prescription-list7">
+
+<div>
+    <ion-item ng-if="responsibleFounded">
+
+      <div ng-style="ngStyleRelationEldestResponsible(eledest,'layout')">
+
+        <header class="item" ng-style="ngStyleRelationEldestResponsible(eledest,'header')">
+          <div class="row">
+            <div class="col col-70">  <h2>{{responsibleFounded.firstname}} {{responsibleFounded.lastname}}  <h2></div>
+              <div class="col col-30" style="text-align:center;">  <h2>{{responsibleFounded.id}}  <h2></div>
+              </div>
+            </header>
+
+
+            <div ng-style="ngStyleRelationEldestResponsible(responsibleFounded,'body')">
+
+              <ion-grid  >
+                <ion-list id="prescription-list7">
+                  <div class="row">
+                    <div class="col col-100"><b>phone</b>  {{responsibleFounded.phone}}</div>
+                  </div>
+                  <div class="row" ng-if="responsibleFounded.senderRole==1 || responsibleFounded.state==1">
+                    <div class="col col-50"><b>birthdate</b> {{responsibleFounded.birthdate}}</div>
+                    <div class="col col-50"><b>address</b> {{responsibleFounded.address}}</div>
+                  </div>
+                </ion-list>
+              </ion-grid>
+            </div>
+
+            <footer ng-style="ngStyleRelationEldestResponsible(eledest,'footer')">
+              <button class="button button-energized " clear item-right ng-click="addResponsible()">Ajouter</button>
+            </footer>
+          </div>
+        </div>
+
+
+
+        </ion-item>
+
+        <div ng-repeat="responsible in responsibleInCharge">
+          <ion-item  class=" card item" >
+            <div ng-style="ngStyleRelationEldestResponsible(responsible,'layout')">
+
+              <header class="item" ng-style="ngStyleRelationEldestResponsible(responsible,'header')">
+                <div class="row">
+                  <div class="col col-70">  <h2>{{responsible.firstname}} {{responsible.lastname}}  <h2></div>
+                  <div class="col col-30" style="text-align:center;">  <h2>{{responsible.id}}  <h2></div>
+                </div>
+              </header>
+
+
+              <div ng-style="ngStyleRelationEldestResponsible(responsible,'body')">
+                  <ion-list id="responsible{{responsible.id}}">
+                    <div class="row">
+                      <div class="col col-25"><b>phone</b></div>
+                      <div class="col col-75"><p>{{responsible.phone}}</p></div>
+                    </div>
+                    <div class="row" ng-if="responsible.senderRole==0 || responsible.state==1">
+                      <div class="col col-25"><b>mail</b></div>
+                      <div class="col col-75"><p>{{responsible.mail}}</p></div>
+                    </div>
+                    <div class="row" ng-if="responsible.senderRole==0 || responsible.state==1">
+                      <div class="col col-25"><b>birthdate</b> </div>
+                      <div class="col col-75"><p>{{responsible.birthdate | date :  "dd/MM/y"}}</p></div>
+                    </div>
+                    <div class="row" ng-if="responsible.senderRole==0 || responsible.state==1">
+                      <div class="col col-25"><b>address</b></div>
+                      <div class="col col-75"><p>{{responsible.address}}</p></div>
+                    </div>
+                  </ion-list>
+              </div>
+
+              <footer ng-style="ngStyleRelationEldestResponsible(responsible,'footer')">
+                <button class="button button-balanced" round ng-if="responsible.senderRole==0 && responsible.state== 0"  ng-click="acceptResponsible(responsible,1)">Accepter</button>
+                <button class="button button-stable" round ng-if="responsible.senderRole==0 && responsible.state== 0"  ng-click="showConfirmRemoveResponsible(responsible)">Refuser</button>
+                <button class="button button-positive" round ng-if="responsible.state==1" ng-click="viewResponsible(responsible)">Afficher</button>
+                <button class="button button-stable" round ng-if="responsible.state==1" ng-click="showConfirmRemoveResponsible(responsible)">Supprimer</button>
+                <button class="button button-calm " round ng-if="responsible.senderRole==1 && responsible.state== 0"  ng-click="showConfirmRemoveResponsible(responsible)">Annuler</button>
+              </footer>
+            </div>
+          </ion-item>
+        </div>
+
+
+  </ion-list>
+
+
+
+
+
+</ion-content>
+
+
+
+
+</ion-view>
